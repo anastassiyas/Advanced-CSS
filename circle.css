@@ -1,0 +1,42 @@
+body {
+background-color: aquamarine;
+
+}
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.containertwo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}   
+.hover,
+.rotate,
+.translateX,
+.threeD,
+.skew,
+.translateY,
+.scale {
+    width: 110px;
+    line-height: 0;
+    padding: 50px 0;
+    margin: 60px auto;
+    background-color: rgb(130, 238, 179);
+    color: rgb(226, 245, 159);
+    border-radius: 50%;
+    cursor: pointer;
+}
+div {
+    transition: width 12s, height 4s;
+  }
+  
+  div:hover {
+    width: 300px;
+    height: 300px;
+  }
