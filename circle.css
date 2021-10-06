@@ -1,42 +1,73 @@
-body {
-background-color: aquamarine;
-
+a {
+    margin: 7px;
 }
-.flexbox-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+.container {
+background-color: cyan;
 }
-.containertwo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-}   
+.row {
+    background-color: cyan;
+}
+h1 {
+text-align: center;
+}
 .hover,
 .rotate,
-.translateX,
-.threeD,
+.translatex,
+.threed,
 .skew,
-.translateY,
+.translatey,
 .scale {
-    width: 110px;
+    width: 100px;
     line-height: 0;
     padding: 50px 0;
-    margin: 60px auto;
-    background-color: rgb(130, 238, 179);
-    color: rgb(226, 245, 159);
+    margin: 50px auto;
+    background-color: rgb(198, 23, 233);
+    color: white;
     border-radius: 50%;
     cursor: pointer;
+    color:white;
+
+/*properties you want to transition */
+transition-property: color, background-color, transform; 
+/*/*How long you want the element to transition */
+transition-duration: 2s;
+/*How long until the transition begins*/
+transition-delay: 2s;
+/*How we want our elements to trandition ease, ease-in */
+transition-timing-function: ease-out;
 }
-div {
-    transition: width 12s, height 4s;
-  }
   
-  div:hover {
-    width: 300px;
-    height: 300px;
-  }
+.hover:hover {
+color: blueviolet;
+background-color: teal;
+}
+.rotate:hover {
+color: blueviolet;
+background-color: teal;
+transform: rotate (360deg);
+}
+.skew:hover {
+color: blueviolet;
+background-color: teal;    
+transform: skew(20deg);    
+} 
+.translatex:hover {
+color: blueviolet;
+background-color: teal;    
+transform: translateX(-30px);      
+}
+.translatey:hover {
+color: blueviolet;
+background-color: teal;    
+transform: translateY(50px);      
+}
+.scale:hover {
+color: blueviolet;
+background-color: teal;    
+transform: scale(50%);      
+}
+.threed:hover {
+color: blueviolet;
+background-color: teal;    
+transform: rotate3d(1, 1, 1, 360deg);      
+}    
