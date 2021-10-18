@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="selectors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Selectors</title>
+</head>
+<style>
+    h1 {
+        color: red;
+    }
+
+    #world {
+        color: green;
+
+    }
+
+    .world {
+        color: aquamarine;
+    }
+
+    h4,
+    p {
+        color: blueviolet;
+    }
+
+    .section1 h1 {
+        color: coral;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .section2 h1 {
+        color: cyan;
+    }
+
+    .section2 ul li {
+        color: pink;
+        font-size: 30px;
+        list-style-type: none;
+        transition-property: all;
+        transition-duration: 4s;
+    }
+
+    .section2 ul li:hover {
+        color: blueviolet;
+        background-color: teal;
+        transform: skew(20deg);
+    }
+
+    .section3 {
+        color: darkcyan;
+    }
+
+    .section3:hover {
+
+        color: blueviolet;
+        background-color: teal;
+        transform: translateX(-30px);
+    }
+    .section2 ul .Spanish:hover {
+    
+        color:darkred;
+        transform: translateX(-40px)
+    }
+    p::first-line {
+        color:deeppink;
+    
+    }
+    p::first-letter {
+        color: deepskyblue;
+        font-size: 40px;
+    }
+    p::selection {
+        color: fuchsia;
+        background-color: gold;
+    }
+</style>
+
+<body>
+    <h1 class="animate__animated animate__bounce">Watch me change</h1>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="circles.html">Watch the transition</a>
+            <a href="animation.html">Animation</a>
+        </nav>
+    </header>
+
+
+    <h1>Hello,World!</h1>
+
+    <h2 id="world"> Hola Mundo</h2>
+    <h2 class="world-2" Hola Mundo></h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ratione laboriosam sapiente eum, aperiam quae
+        corporis consequatur deleniti praesentium, aspernatur obcaecati quisquam quaerat iusto vel optio ex minus earum
+        doloribus.
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsa totam, incidunt aut quisquam sequi veniam
+        nam quis recusandae cumque ratione soluta explicabo corporis, qui ut ea consequatur eligendi aperiam.</p>
+    <h4>Privet</h4>
+
+    <div class="section1">
+        <h1> Hello World!</h1>
+        <p>This is the English Language</p>
+    </div>
+    <h1>Hola Mundo!</h1>
+    <p>This is the Spanish Language.</p>
+    <!--make style changes 5 to this div's <p>
+        include a transform-->
+    <!--make style changes to the <li> in this div
+            make seperate style changes to the 
+        'spanish' class <li>-->
+    <div class="section2">
+        <h1>Bonjour le Monde!</h1>
+        <p>This is the French Language.</p>
+        <ul>
+            <li>4 Languages of the World</li>
+            <li>English</li>
+            <li class="Spanish">Spanish</li>
+            <li>French</li>
+            <li>Arabic</li>
+        </ul>
+    </div>
+    <!--make style changes to this div's <p> tag and
+    <ul> tag. Include an animation on the <li>-->
+    <div class="section3">
+        <h1>مرحبا بالعالم</h1>
+        <p>This is the Arabic Language. </p>
+        <ul>
+            <li>4 Languages of the World</li>
+            <li>English</li>
+            <li> Spanish</li>
+            <li>French</li>
+            <li>Arabic</li>
+        </ul>
+    </div>
+</body>
+
+</html>
